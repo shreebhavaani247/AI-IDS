@@ -1,0 +1,15 @@
+# id|pattern|severity|description
+p001|or 1=1|high|SQL tautology injection
+p002|union select|high|SQL UNION injection
+p003|<script>|medium|XSS script tag
+p004|/etc/passwd|high|Attempt to read passwd file
+p005|nmap|low|Network scanner signature
+p006|../|high|Directory traversal attempt
+# Added cloud-specific patterns
+p007|/admin|medium|Access to admin endpoint
+p008|/login|medium|Suspicious login access
+p009|aws_access_key_id|high|AWS credentials exposed
+p010|secret|medium|Potential secret key exposure
+p011|scp|medium|File transfer attempt
+p012|curl|low|HTTP request via curl
+
